@@ -20,7 +20,7 @@ public class CompteSimple extends Compte {
 	
 	@Override
 	public String toString() {
-		return "CompteSimple [decouvert=" + decouvert + "]";
+		return "CompteSimple [decouvert=" + decouvert + ", idCompte=" + idCompte + ", solde=" + solde + "]";
 	}
 
 	// Constructeur
@@ -30,5 +30,6 @@ public class CompteSimple extends Compte {
 		this.decouvert = decouvert;
 	}
 
+	
 	
 }

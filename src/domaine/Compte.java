@@ -5,6 +5,7 @@ public class Compte {
 	// Attributs
 	
 	protected int idCompte , solde;
+	protected Personne proprietaire;
 
 	// Getters & Setters
 	
