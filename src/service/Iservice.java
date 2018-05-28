@@ -11,30 +11,31 @@ public interface Iservice {
 	public void createPersonne();
 	public void readPersonne(Personne p);
 	public void updatePersonne(Personne p);
-	public void supprimerPersonne(Personne p);
-	public void listeDesPersonnes();
+	public void deletePersonne(Personne p);
 	public void affilierClub(Personne p, Club c);
 	
 	// CRUD pour l'objet Compte()
 	public void attribuerCompte(Personne p, Compte c);
 	public void crediterCompte(Compte c, double montant);
 	public void debiterCompte(Compte c, double montant);
-	public void supprimerCompte(Compte c);
-	public void ajouterTitulaire(Compte c, Personne p);
-	public void lireCompte();
+	public void createTitulaire(Compte c, Personne p);
+	public void readCompte();
+	public void updateTitulaire(Compte c, Personne p);
+	public void deleteCompte(Compte c);
 	
 	// Pour l'objet Club
+	public void createClub();
 	public void readClub(Club club);
-	public void ajouterPersonneClub(Personne p, Club c);
-	public void listeDesClub();
+	public void readClubs();
+	public void ajouterMembreClub(Personne p, Club c);
+
 	public void listeDeClubParUtilisateur(Personne p);
-	public void suppressionDeClub(Club club);
-	public void modificationDuNomDeClub(String nom, Club club);
+	public void deleteClub(Club club);
+	public void updateClubName(String nom, Club club);
 	
 	// Pour l'objet Login
 	public void createLogin();
 	public void readLogin();
 	public void updateLogin(Login log);
 	public void suppressionLogin();
-	
 }
