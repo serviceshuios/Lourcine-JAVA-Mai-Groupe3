@@ -10,7 +10,6 @@ public class Personne {
 	private Collection<Club> clubs;
 	private Login login;
 	
-	// Classe compte pas encore prête
 	private Collection<Compte> compte;
 	
 	public Personne(int personneId, int age, String nom, String prenom, Collection<Club> clubs, Login login) {
