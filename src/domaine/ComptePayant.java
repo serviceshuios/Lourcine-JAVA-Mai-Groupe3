@@ -29,6 +29,18 @@ public class ComptePayant extends Compte {
 		super();
 		this.taux = taux;
 	}
+
+	public ComptePayant(int idCompte, int solde, double taux) {
+		super(idCompte, solde);
+		this.taux = taux;
+	}
+
+	public ComptePayant(int idCompte, int solde, Personne proprietaire, double taux) {
+		super(idCompte, solde, proprietaire);
+		this.taux = taux;
+	}
+	
+	
 	
 
 }

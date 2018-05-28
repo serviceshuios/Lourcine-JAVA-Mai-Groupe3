@@ -29,6 +29,18 @@ public class CompteEpargne extends Compte {
 		super();
 		this.pourcentage = pourcentage;
 	}
+
+	public CompteEpargne(int idCompte, int solde, double pourcentage) {
+		super(idCompte, solde);
+		this.pourcentage = pourcentage;
+	}
+
+	public CompteEpargne(int idCompte, int solde, Personne proprietaire, double pourcentage) {
+		super(idCompte, solde, proprietaire);
+		this.pourcentage = pourcentage;
+	}
+	
+	
 	
 
 }

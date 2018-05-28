@@ -30,6 +30,18 @@ public class CompteSimple extends Compte {
 		this.decouvert = decouvert;
 	}
 
+	public CompteSimple(int idCompte, int solde, int decouvert) {
+		super(idCompte, solde);
+		this.decouvert = decouvert;
+	}
+
+	public CompteSimple(int idCompte, int solde, Personne proprietaire, int decouvert) {
+		super(idCompte, solde, proprietaire);
+		this.decouvert = decouvert;
+	}
+	
+	
+
 	
 	
 }

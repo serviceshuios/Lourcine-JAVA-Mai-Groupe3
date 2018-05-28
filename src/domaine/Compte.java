@@ -32,4 +32,24 @@ public class Compte {
 		return "Compte [idCompte=" + idCompte + ", solde=" + solde + "]";
 	}
 
+	// Constructeur
+	
+	public Compte() {
+		super();
+	}
+	
+	public Compte(int idCompte, int solde) {
+		super();
+		this.idCompte = idCompte;
+		this.solde = solde;
+	}
+
+	public Compte(int idCompte, int solde, Personne proprietaire) {
+		super();
+		this.idCompte = idCompte;
+		this.solde = solde;
+		this.proprietaire = proprietaire;
+	}
+
+	
 }
