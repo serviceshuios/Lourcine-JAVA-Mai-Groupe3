@@ -3,14 +3,30 @@ package domaine;
 public class Login {
 
 		private int Id;
-		private String pseudo;
-		private String password;
+		private String pseudo, password;
+		private Personne personne;
 		
+		public Personne getPersonne() {
+			return personne;
+		}
+
+		public void setPersonne(Personne personne) {
+			this.personne = personne;
+		}
+
 		public Login(int id, String pseudo, String password) {
 			super();
 			Id = id;
 			this.pseudo = pseudo;
 			this.password = password;
+		}
+
+		public Login(int id, String pseudo, String password, Personne personne) {
+			super();
+			Id = id;
+			this.pseudo = pseudo;
+			this.password = password;
+			this.personne = personne;
 		}
 
 		public Login() {

@@ -6,8 +6,8 @@ public class Club {
 	
 	private int clubId;
 	private String nomDuClub;
-	
 	private Collection<Personne> membres;
+	
 	public int getClubId() {
 		return clubId;
 	}
