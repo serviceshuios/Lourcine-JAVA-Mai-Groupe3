@@ -21,9 +21,10 @@ public interface Iservice {
 	public void debiterCompte(Compte c, double montant);
 	public void supprimerCompte(Compte c);
 	public void ajouterTitulaire(Compte c, Personne p);
-	public void listeDesComptes();
+	public void lireCompte();
 	
 	// Pour l'objet Club
+	public void readClub(Club club);
 	public void ajouterPersonneClub(Personne p, Club c);
 	public void listeDesClub();
 	public void listeDeClubParUtilisateur(Personne p);
