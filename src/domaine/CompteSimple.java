@@ -4,15 +4,15 @@ public class CompteSimple extends Compte {
 	
 	// Attributs
 	
-	private int decouvert;
+	private double decouvert;
 	
 	// Getters & Setters
 	
-	public int getDecouvert() {
+	public double getDecouvert() {
 		return decouvert;
 	}
 
-	public void setDecouvert(int decouvert) {
+	public void setDecouvert(double decouvert) {
 		this.decouvert = decouvert;
 	}
 
@@ -25,18 +25,18 @@ public class CompteSimple extends Compte {
 
 	// Constructeur
 	
-	public CompteSimple(int decouvert) {
+	public CompteSimple(double decouvert) {
 		super();
 		this.decouvert = decouvert;
 	}
 
-	public CompteSimple(int idCompte, int solde, int decouvert) {
+	public CompteSimple(int idCompte, double solde, double decouvert) {
 		super.idCompte = idCompte;
 		super.solde = solde;
 		this.decouvert = decouvert;
 	}
 
-	public CompteSimple(int idCompte, int solde, Personne proprietaire, int decouvert) {
+	public CompteSimple(int idCompte, double solde, Personne proprietaire, double decouvert) {
 		super.idCompte = idCompte;
 		super.solde = solde;
 		super.proprietaire = proprietaire;

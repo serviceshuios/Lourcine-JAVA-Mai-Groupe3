@@ -1,5 +1,6 @@
 package domaine;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class Personne {
@@ -7,10 +8,10 @@ public class Personne {
 	protected int personneId;
 	private int age;
 	private String nom, prenom;
-	private Collection<Club> clubs;
+	private Collection<Club> clubs = new ArrayList<Club>();;
 	private Login login;
 	
-	private Collection<Compte> compte;
+	private Collection<Compte> compte = new ArrayList<Compte>();
 	
 	public Personne(int personneId, int age, String nom, String prenom, Collection<Club> clubs, Login login) {
 		super();
@@ -30,6 +31,14 @@ public class Personne {
 		this.prenom = prenom;
 		this.age = age;
 		
+	}
+
+	public Collection<Compte> getCompte() {
+		return compte;
+	}
+
+	public void setCompte(Collection<Compte> compte) {
+		this.compte = compte;
 	}
 
 	public int getPersonneId() {
@@ -79,4 +88,13 @@ public class Personne {
 	public void setLogin(Login login) {
 		this.login = login;
 	}
+
+	@Override
+	public String toString() {
+
+		return "Personne [personneId=" + personneId + ", age=" + age + ", nom=" + nom + ", prenom=" + prenom
+				+ ", compte=" + compte + "]";
+	}
+	
+	
 }

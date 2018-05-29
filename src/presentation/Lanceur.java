@@ -3,9 +3,12 @@ package presentation;
 import service.Iservice;
 import service.ServiceImpl;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Hashtable;
 import java.util.Map;
 
+import domaine.Club;
 import domaine.Compte;
 import domaine.CompteEpargne;
 import domaine.ComptePayant;
@@ -16,33 +19,30 @@ public class Lanceur {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
 		Iservice service = new ServiceImpl();
-		Map<Integer,Compte> resultatscompte = new Hashtable<Integer,Compte>(); 
+		Map<Integer, Personne> resultats = new Hashtable<Integer, Personne>();
 		System.out.println("AFFICHAGE MAP AVANT AJOUT");
-		service.listeCompte(resultatscompte);
-		System.out.println("AJOUT D'UN COMPTE");
-		CompteSimple c1 = new CompteSimple(10001, 0, 1000);
-		CompteEpargne c2 = new CompteEpargne(10002, 0, 0.45);
-		ComptePayant c3 = new ComptePayant(10003, 0, 3);
-		resultatscompte=service.createCompte(c1);
-		resultatscompte=service.createCompte(c2);
-		resultatscompte=service.createCompte(c3);
-		System.out.println("AFFICHAGE MAP APRES AJOUT");
-		service.listeCompte(resultatscompte); 
-		
-		/*service.listePersonne(resultats); 
+		service.listePersonne(resultats);
 		System.out.println("AJOUT D'UNE PERSONNE");
-		Personne p = new Personne(1,"ZEC","UNION",20);
-		Personne p2 = new Personne(2,"ZEC2","UNION2",22);
-		resultats=service.createPersonne(p);
-		resultats=service.createPersonne(p2);
-		System.out.println("AFFICHAGE MAP APRES AJOUT");
-		service.listePersonne(resultats); */
+		Personne p = new Personne(1, "ZEC", "UNION", 20);
+		Personne p2 = new Personne(2, "ZEC2", "UNION2", 22);
 		
 		
+		// creation d'une liste de personnes
+		Collection<Personne> membres = new ArrayList<Personne>();
+		// creation d'un club
+		Club cl1= new Club(5555, "Barcelone", membres);
+		// ASSOCIER UN CLUB A UNE PERSONNE
+		System.out.println("AFFICHAGE MAP AVANT AJOUT CLUB");
+		service.affilierClub(p2, cl1);
+		resultats = service.createPersonne(p2);
+		
+		System.out.println("AFFICHAGE MAP APRES AJOUT CLUB");
+		service.listePersonne(resultats);
 		
 		
-		
+
 	}
 
 }

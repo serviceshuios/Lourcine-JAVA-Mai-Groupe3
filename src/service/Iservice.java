@@ -16,8 +16,8 @@ public interface Iservice {
 	public void updatePersonne(Personne p);
 	public void deletePersonne(Personne p);
 	
-	public void affilierClub(Personne p, Club c);
-	public void listePersonne(Map<Integer, Personne> personnes);
+	public void affilierClub(Personne p, Club c); //new
+	public void listePersonne(Map<Integer, Personne> personnes); //new
 	
 	// CRUD pour l'objet Compte()
 	//public void createCompte(Compte c);
@@ -42,7 +42,9 @@ public interface Iservice {
 	public void updateClub(Club club);
 	public void deleteClub(Club club);
 	
-	public void ajouterMembreClub(Personne p, Club c);
+	public void ajouterMembreClub(Personne p, Club c); //new
+	
+	public void listeClub(Map<Integer, Club> clubs);
 	public void listeDeClubParUtilisateur(Personne p);
 	public void updateClubName(String nom, Club club);
 	public void readClubs();

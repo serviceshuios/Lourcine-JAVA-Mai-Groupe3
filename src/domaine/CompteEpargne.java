@@ -30,13 +30,13 @@ public class CompteEpargne extends Compte {
 		this.pourcentage = pourcentage;
 	}
 
-	public CompteEpargne(int idCompte, int solde, double pourcentage) {
+	public CompteEpargne(int idCompte, double solde, double pourcentage) {
 		super.idCompte = idCompte;
 		super.solde = solde;
 		this.pourcentage = pourcentage;
 	}
 
-	public CompteEpargne(int idCompte, int solde, Personne proprietaire, double pourcentage) {
+	public CompteEpargne(int idCompte, double solde, Personne proprietaire, double pourcentage) {
 		super.idCompte = idCompte;
 		super.solde = solde;
 		super.proprietaire = proprietaire;

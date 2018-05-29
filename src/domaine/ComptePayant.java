@@ -30,13 +30,13 @@ public class ComptePayant extends Compte {
 		this.taux = taux;
 	}
 
-	public ComptePayant(int idCompte, int solde, double taux) {
+	public ComptePayant(int idCompte, double solde, double taux) {
 		super.idCompte = idCompte;
 		super.solde = solde;
 		this.taux = taux;
 	}
 
-	public ComptePayant(int idCompte, int solde, Personne proprietaire, double taux) {
+	public ComptePayant(int idCompte, double solde, Personne proprietaire, double taux) {
 		super.idCompte = idCompte;
 		super.solde = solde;
 		super.proprietaire = proprietaire;
