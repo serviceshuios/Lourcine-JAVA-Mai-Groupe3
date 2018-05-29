@@ -19,13 +19,16 @@ public interface Iservice {
 	public void listePersonne(Map<Integer, Personne> personnes);
 	
 	// CRUD pour l'objet Compte()
+	public void createCompte(Compte c);
+	public void readCompte();
+	public void updateCompte(Compte c);
+	public void deleteCompte(Compte c);
 	public void attribuerCompte(Personne p, Compte c);
 	public void crediterCompte(Compte c, double montant);
 	public void debiterCompte(Compte c, double montant);
 	public void createTitulaire(Compte c, Personne p);
-	public void readCompte();
 	public void updateTitulaire(Compte c, Personne p);
-	public void deleteCompte(Compte c);
+	
 	
 	// Pour l'objet Club
 	public void createClub();

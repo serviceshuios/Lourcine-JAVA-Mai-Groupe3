@@ -23,6 +23,11 @@ public class Lanceur {
 		resultats=service.createPersonne(p2);
 		System.out.println("AFFICHAGE MAP APRES AJOUT");
 		service.listePersonne(resultats); 
+		
+		
+		
+		
+		
 	}
 
 }
