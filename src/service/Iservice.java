@@ -15,6 +15,7 @@ public interface Iservice {
 	public void readPersonne(Personne p);
 	public void updatePersonne(Personne p);
 	public void deletePersonne(Personne p);
+	
 	public void affilierClub(Personne p, Club c);
 	public void listePersonne(Map<Integer, Personne> personnes);
 	
@@ -23,6 +24,7 @@ public interface Iservice {
 	public void readCompte();
 	public void updateCompte(Compte c);
 	public void deleteCompte(Compte c);
+	
 	public void attribuerCompte(Personne p, Compte c);
 	public void crediterCompte(Compte c, double montant);
 	public void debiterCompte(Compte c, double montant);
@@ -33,12 +35,14 @@ public interface Iservice {
 	// Pour l'objet Club
 	public void createClub();
 	public void readClub(Club club);
-	public void readClubs();
-	public void ajouterMembreClub(Personne p, Club c);
-
-	public void listeDeClubParUtilisateur(Personne p);
+	public void updateClub(Club club);
 	public void deleteClub(Club club);
+	
+	public void ajouterMembreClub(Personne p, Club c);
+	public void listeDeClubParUtilisateur(Personne p);
 	public void updateClubName(String nom, Club club);
+	public void readClubs();
+	
 	
 	// Pour l'objet Login
 	public void createLogin();
