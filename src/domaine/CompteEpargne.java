@@ -31,12 +31,15 @@ public class CompteEpargne extends Compte {
 	}
 
 	public CompteEpargne(int idCompte, int solde, double pourcentage) {
-		super(idCompte, solde);
+		super.idCompte = idCompte;
+		super.solde = solde;
 		this.pourcentage = pourcentage;
 	}
 
 	public CompteEpargne(int idCompte, int solde, Personne proprietaire, double pourcentage) {
-		super(idCompte, solde, proprietaire);
+		super.idCompte = idCompte;
+		super.solde = solde;
+		super.proprietaire = proprietaire;
 		this.pourcentage = pourcentage;
 	}
 	
