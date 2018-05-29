@@ -49,5 +49,6 @@ public interface Iservice {
 	public void readLogin(Login log);
 	public void updateLogin(Login log);
 	public void deleteLogin(Login log);
+	void createLogin();
 	
 }
