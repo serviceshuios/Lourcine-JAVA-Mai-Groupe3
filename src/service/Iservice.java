@@ -1,5 +1,7 @@
 package service;
 
+import java.util.Collection;
+
 import domaine.Club;
 import domaine.Compte;
 import domaine.Login;
