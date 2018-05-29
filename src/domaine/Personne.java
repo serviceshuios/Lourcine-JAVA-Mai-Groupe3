@@ -22,9 +22,14 @@ public class Personne {
 		this.login = login;
 	}
 
-	public Personne() {
+	public Personne(int personneId, String nom, String prenom, int age) {
 		super();
 		// TODO Auto-generated constructor stub
+		this.personneId = personneId;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.age = age;
+		
 	}
 
 	public int getPersonneId() {

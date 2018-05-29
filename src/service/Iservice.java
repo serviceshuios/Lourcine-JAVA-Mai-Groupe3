@@ -1,6 +1,7 @@
 package service;
 
 import java.util.Collection;
+import java.util.Map;
 
 import domaine.Club;
 import domaine.Compte;
@@ -10,11 +11,12 @@ import domaine.Personne;
 public interface Iservice {
 	
 	// CRUD pour l'objet Personne()
-	public void createPersonne();
+	public Map<Integer, Personne> createPersonne(Personne p);
 	public void readPersonne(Personne p);
 	public void updatePersonne(Personne p);
 	public void deletePersonne(Personne p);
 	public void affilierClub(Personne p, Club c);
+	public void listePersonne(Map<Integer, Personne> personnes);
 	
 	// CRUD pour l'objet Compte()
 	public void attribuerCompte(Personne p, Compte c);
