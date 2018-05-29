@@ -33,9 +33,13 @@ public class Lanceur {
 		Collection<Personne> membres = new ArrayList<Personne>();
 		// creation d'un club
 		Club cl1= new Club(5555, "Barcelone", membres);
+		Club cl2= new Club(5554, "Alianza", membres);
+		Club cl3= new Club(5553, "Man City", membres);
 		// ASSOCIER UN CLUB A UNE PERSONNE
 		System.out.println("AFFICHAGE MAP AVANT AJOUT CLUB");
 		service.affilierClub(p2, cl1);
+		service.affilierClub(p2, cl2);
+		service.affilierClub(p2, cl3);
 		resultats = service.createPersonne(p2);
 		
 		System.out.println("AFFICHAGE MAP APRES AJOUT CLUB");

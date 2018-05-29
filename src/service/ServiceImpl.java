@@ -54,13 +54,8 @@ public class ServiceImpl implements Iservice {
 	@Override
 	public void affilierClub(Personne p, Club c) {
 		// TODO Auto-generated method stub
-	
-		// initiation et instentiation d'une liste de Clubs
-		Collection<Club> clubs = new ArrayList<Club>();
-		// ajout du club c à la list
-		clubs.add(c);
 		// ajout du club à la personne
-		p.setClubs(clubs);
+		p.getClubs().add(c);
 		// initiation et instentiation d'une liste de personnes
 		Collection<Personne> personnes = new ArrayList<Personne>();
 		// ajout de la personne à la liste
