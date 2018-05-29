@@ -32,6 +32,7 @@ public interface Iservice {
 	public void crediterCompte(Compte c, double montant);
 	public void debiterCompte(Compte c, double montant);
 	public void createTitulaire(Compte c, Personne p);
+	public void ajouterTitulaire(Compte c, Personne p);
 	public void updateTitulaire(Compte c, Personne p);
 	
 	

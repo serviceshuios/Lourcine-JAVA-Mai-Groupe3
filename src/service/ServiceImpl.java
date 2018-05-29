@@ -216,4 +216,10 @@ public class ServiceImpl implements Iservice {
 		
 	}
 
+	@Override
+	public void ajouterTitulaire(Compte c, Personne p) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

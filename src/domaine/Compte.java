@@ -24,6 +24,7 @@ public abstract class Compte {
 	public void setSolde(int solde) {
 		this.solde = solde;
 	}
+	
 
 	// To String
 	
