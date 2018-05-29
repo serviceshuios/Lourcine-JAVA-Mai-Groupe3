@@ -33,7 +33,7 @@ public interface Iservice {
 	
 	
 	// Pour l'objet Club
-	public void createClub();
+	public void createClub(Club club);
 	public void readClub(Club club);
 	public void updateClub(Club club);
 	public void deleteClub(Club club);
@@ -45,8 +45,9 @@ public interface Iservice {
 	
 	
 	// Pour l'objet Login
-	public void createLogin();
-	public void readLogin();
+	public void createLogin(Login log);
+	public void readLogin(Login log);
 	public void updateLogin(Login log);
-	public void suppressionLogin();
+	public void deleteLogin(Login log);
+	
 }
