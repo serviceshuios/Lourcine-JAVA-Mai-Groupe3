@@ -16,6 +16,7 @@ public class ServiceImpl implements Iservice {
 	private Map<Integer, Personne> personnes = new Hashtable<Integer, Personne>();
 	private Map<Integer, Compte> comptes = new Hashtable<Integer, Compte>();
 	private Map<Integer, Club> clubs = new Hashtable<Integer, Club>();
+	private Map<Integer, Login> logins = new Hashtable<Integer, Login>();
 	
 	public Map<Integer, Compte> getComptes() {
 		return comptes;
@@ -150,12 +151,6 @@ public class ServiceImpl implements Iservice {
 	}
 
 	@Override
-	public void createLogin() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public void updateLogin(Login log) {
 		// TODO Auto-generated method stub
 
@@ -276,6 +271,12 @@ public class ServiceImpl implements Iservice {
 
 	public void setClubs(Map<Integer, Club> clubs) {
 		this.clubs = clubs;
+	}
+
+	@Override
+	public void listeLogin(Map<Integer, Login> logins) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

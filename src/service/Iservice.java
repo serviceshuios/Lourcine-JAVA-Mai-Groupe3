@@ -15,9 +15,9 @@ public interface Iservice {
 	public void readPersonne(Personne p);
 	public void updatePersonne(Personne p);
 	public void deletePersonne(Personne p);
-	
 	public void affilierClub(Personne p, Club c); //new
 	public void listePersonne(Map<Integer, Personne> personnes); //new
+	public void attribuerCompte(Personne p, Compte c); 
 	
 	// CRUD pour l'objet Compte()
 	//public void createCompte(Compte c);
@@ -28,7 +28,6 @@ public interface Iservice {
 	
 	public void listeCompte(Map<Integer, Compte> comptes); //new
 	
-	public void attribuerCompte(Personne p, Compte c);
 	public void crediterCompte(Compte c, double montant);
 	public void debiterCompte(Compte c, double montant);
 	public void createTitulaire(Compte c, Personne p);
@@ -55,6 +54,6 @@ public interface Iservice {
 	public void readLogin(Login log);
 	public void updateLogin(Login log);
 	public void deleteLogin(Login log);
-	void createLogin();
+	public void listeLogin(Map<Integer, Login> logins); //new
 	
 }

@@ -41,7 +41,8 @@ public class Lanceur {
 		service.affilierClub(p2, cl2);
 		service.affilierClub(p2, cl3);
 		resultats = service.createPersonne(p2);
-		
+		service.affilierClub(p, cl1);
+		resultats = service.createPersonne(p);
 		System.out.println("AFFICHAGE MAP APRES AJOUT CLUB");
 		service.listePersonne(resultats);
 		
